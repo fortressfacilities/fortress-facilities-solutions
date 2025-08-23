@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Summit County Facilities Management | One‑Stop Property Care – Fortress</title>
+  <meta name="description" content="Fortress Facilities Management: Summit County’s one‑stop shop for landscaping, janitorial, carpet & floor care, snow & ice, handyman, and light construction. Local, fast, efficient, dependable." />
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            heading: ['Montserrat', 'ui-sans-serif', 'system-ui'],
+            body: ['Open Sans', 'ui-sans-serif', 'system-ui']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    :root{
+      --brand-deep: #0C2D48;      /* Primary */
+      --brand-gray: #4A4A4A;      /* Text/Accents */
+      --brand-green: #2F5233;     /* Support */
+      --brand-white: #F8F9FA;     /* Backgrounds */
+      --brand-accent: #E87500;    /* CTAs */
+    }
+    html{scroll-behavior:smooth}
+    /* Offset for sticky header */
+    section[id]{ scroll-margin-top: 96px; }
+    /* Simple focus style for accessibility */
+    .focus-ring:focus{ outline: 3px solid var(--brand-accent); outline-offset: 2px; }
+  </style>
+
+  <!-- LocalBusiness Schema (fill placeholders before publishing) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Fortress Facilities Management",
+    "url": "https://www.example.com",
+    "telephone": "+1-000-000-0000",
+    "areaServed": ["Breckenridge","Frisco","Dillon","Silverthorne","Keystone","Copper Mountain"],
+    "address": {"@type":"PostalAddress","addressLocality":"Summit County","addressRegion":"CO","addressCountry":"US"},
+    "sameAs": []
+  }
+  </script>
+</head>
+<body class="font-body text-[var(--brand-gray)] bg-[var(--brand-white)]">
+  <!-- Skip link -->
+  <a href="#main" class="sr-only focus:not-sr-only focus-ring absolute left-2 top-2 z-50 bg-white px-3 py-2 rounded">Skip to content</a>
+
+  <!-- Header -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3 group" aria-label="Fortress Facilities Management home">
+        <!-- Simple shield/mountain logo -->
+        <svg class="w-9 h-9 text-[var(--brand-deep)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+          <path d="M12 2l7 3v6c0 5.25-3.5 9.75-7 11-3.5-1.25-7-5.75-7-11V5l7-3z"/>
+          <path d="M6.5 10l2.8-2.8L12 10l2-2 3.5 3.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div>
+          <div class="font-heading font-extrabold tracking-wide text-xl text-[var(--brand-deep)] leading-none">FORTRESS</div>
+          <div class="text-xs uppercase tracking-wider text-slate-500">Facilities Management</div>
+        </div>
+      </a>
+
+      <nav aria-label="Primary" class="hidden md:flex items-center gap-8 font-semibold">
+        <a class="hover:text-[var(--brand-deep)] focus-ring" href="#services">Services</a>
+        <a class="hover:text-[var(--brand-deep)] focus-ring" href="#why">Why Fortress</a>
+        <a class="hover:text-[var(--brand-deep)] focus-ring" href="#industries">Industries</a>
+        <a class="hover:text-[var(--brand-deep)] focus-ring" href="#about">About</a>
+        <a class="hover:text-[var(--brand-deep)] focus-ring" href="#contact">Contact</a>
+      </nav>
+
+      <div class="hidden md:block">
+        <a href="#contact" class="focus-ring inline-flex items-center justify-center rounded-lg px-4 py-2 font-semibold text-white bg-[var(--brand-accent)] hover:opacity-90">Request a Free Quote</a>
+      </div>
+
+      <!-- Mobile menu button (no JS required in Duda; can swap for native) -->
+      <button class="md:hidden focus-ring p-2 rounded text-[var(--brand-deep)]" aria-label="Open menu" onclick="document.getElementById('mnav').classList.toggle('hidden')">
+        <svg class="w-6 h-6" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mnav" class="md:hidden hidden border-t border-slate-200">
+      <div class="px-4 py-3 space-y-2">
+        <a class="block py-2" href="#services" onclick="this.closest('#mnav').classList.add('hidden')">Services</a>
+        <a class="block py-2" href="#why" onclick="this.closest('#mnav').classList.add('hidden')">Why Fortress</a>
+        <a class="block py-2" href="#industries" onclick="this.closest('#mnav').classList.add('hidden')">Industries</a>
+        <a class="block py-2" href="#about" onclick="this.closest('#mnav').classList.add('hidden')">About</a>
+        <a class="block py-2" href="#contact" onclick="this.closest('#mnav').classList.add('hidden')">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="relative isolate overflow-hidden bg-[var(--brand-deep)]">
+      <div class="absolute inset-0 opacity-50 bg-[url('https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1600&auto=format&fit=crop')] bg-cover bg-center" aria-hidden="true"></div>
+      <div class="absolute inset-0 bg-[var(--brand-deep)]/70" aria-hidden="true"></div>
+      <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-28 text-white">
+        <h1 class="font-heading text-4xl sm:text-5xl font-extrabold leading-tight">Summit County’s One‑Stop Shop for Property Care</h1>
+        <p class="mt-4 max-w-2xl text-lg">Landscaping, janitorial, carpet & floor care, snow & ice, handyman, and light construction—delivered by one accountable local team.</p>
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#contact" class="focus-ring inline-flex items-center rounded-lg bg-[var(--brand-accent)] px-6 py-3 font-semibold text-white hover:opacity-90">Request a Free Quote</a>
+          <a href="#services" class="focus-ring inline-flex items-center rounded-lg border border-white/70 px-6 py-3 font-semibold text-white hover:bg-white/10">View Services</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Overview -->
+    <section id="services" class="py-20">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header class="mb-12">
+          <h2 class="font-heading text-3xl sm:text-4xl text-[var(--brand-deep)] font-extrabold">Our Commercial Maintenance Solutions</h2>
+          <p class="mt-3 max-w-3xl">End the vendor juggle. We deliver landscaping, snow & ice control, janitorial, carpet care, handyman work, and light construction—under one accountable team.</p>
+        </header>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <!-- Janitorial -->
+          <article class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <svg class="w-7 h-7 text-[var(--brand-deep)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 21h14M8 21V7a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v14"/><path d="M10 11h4M10 15h4"/></svg>
+              <h3 class="font-heading text-xl font-bold">Janitorial Services</h3>
+            </div>
+            <p class="text-sm leading-relaxed">Keep workplaces healthy and spotless with routine cleaning, restroom sanitation, day porter support, glass care, and post‑construction cleanup—built around your schedule.</p>
+            <a href="#janitorial" class="mt-4 inline-flex text-[var(--brand-deep)] font-semibold">Learn more →</a>
+          </article>
+
+          <!-- Landscaping -->
+          <article class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <svg class="w-7 h-7 text-[var(--brand-deep)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 17h16M5 17l3-6h8l3 6"/><circle cx="12" cy="17" r="2"/></svg>
+              <h3 class="font-heading text-xl font-bold">Landscaping</h3>
+            </div>
+            <p class="text-sm leading-relaxed">Year‑round grounds care: weekly upkeep, seasonal plantings, irrigation checks and blowouts, fertilization & weed control, plus fast storm debris cleanup for strong curb appeal.</p>
+            <a href="#landscaping" class="mt-4 inline-flex text-[var(--brand-deep)] font-semibold">Learn more →</a>
+          </article>
+
+          <!-- Handyman -->
+          <article class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <svg class="w-7 h-7 text-[var(--brand-deep)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 21l6-6M7 17l4 4M14 3l7 7-4 4-7-7 4-4z"/></svg>
+              <h3 class="font-heading text-xl font-bold">Handyman & Building Maintenance</h3>
+            </div>
+            <p class="text-sm leading-relaxed">Quick, professional fixes—repairs, paint, doors & hardware, fixtures, minor plumbing/electrical—and light construction for remodels, tenant improvements, and punch‑lists.</p>
+            <a href="#handyman" class="mt-4 inline-flex text-[var(--brand-deep)] font-semibold">Learn more →</a>
+          </article>
+
+          <!-- Snow -->
+          <article class="bg-white rounded-2xl shadow-sm border border-slate-200 p-6">
+            <div class="flex items-center gap-3 mb-3">
+              <svg class="w-7 h-7 text-[var(--brand-deep)]" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v20M4 6l16 12M20 6L4 18"/></svg>
+              <h3 class="font-heading text-xl font-bold">Snow & Ice Removal</h3>
+            </div>
+            <p class="text-sm leading-relaxed">24/7 plowing, shoveling, eco‑friendly de‑icing, and roof clearing keep lots, walkways, and entries safe—so winter weather never slows your operation.</p>
+            <a href="#snow" class="mt-4 inline-flex text-[var(--brand-deep)] font-semibold">Learn more →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Fortress band -->
+    <section id="why" class="bg-[var(--brand-deep)] text-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+        <div class="text-center">
+          <p class="font-heading text-sm tracking-widest uppercase">FAST • EFFICIENT • DEPENDABLE • LOCAL</p>
+          <h2 class="mt-2 font-heading text-3xl sm:text-4xl font-extrabold">A Hands‑On, Local Approach</h2>
+          <p class="mt-3 max-w-3xl mx-auto">We are rooted in Summit County and built for mountain operations. Expect quick response, streamlined service, and clear follow‑through from a team that knows the high country.</p>
+        </div>
+
+        <div class="mt-12 grid md:grid-cols-3 gap-6">
+          <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+            <h3 class="font-heading font-bold text-xl">Customized Approach</h3>
+            <p class="mt-2 text-sm opacity-90">Tailored solutions for each property—from seasonal snow programs to year‑round janitorial and bundled service packages.</p>
+          </div>
+          <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+            <h3 class="font-heading font-bold text-xl">Experienced & Professional Team</h3>
+            <p class="mt-2 text-sm opacity-90">Local crews who live and work here, held to high standards on safety, quality, and communication.</p>
+          </div>
+          <div class="bg-white/5 rounded-2xl p-6 border border-white/10">
+            <h3 class="font-heading font-bold text-xl">Fast, Efficient & Dependable</h3>
+            <p class="mt-2 text-sm opacity-90">Rapid response times, efficient execution, and accountability—so you can focus on your business while we handle the property.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Detailed Services anchors -->
+    <section class="py-20" aria-labelledby="svc-detail">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 id="svc-detail" class="font-heading text-3xl sm:text-4xl text-[var(--brand-deep)] font-extrabold">Service Details</h2>
+        <div class="mt-10 grid lg:grid-cols-2 gap-10">
+          <div id="janitorial">
+            <h3 class="font-heading text-2xl font-bold text-[var(--brand-deep)]">Janitorial Services</h3>
+            <p class="mt-3 leading-relaxed">Create a spotless, healthy environment with programs built around your schedule—nightly cleans, day porter coverage, glass care, floor care, and post‑construction cleanup. Our teams meet high health and safety standards so your space always makes a great impression.</p>
+          </div>
+          <div id="landscaping">
+            <h3 class="font-heading text-2xl font-bold text-[var(--brand-deep)]">Landscaping</h3>
+            <p class="mt-3 leading-relaxed">Weekly maintenance, seasonal plantings, irrigation checks and blowouts, fertilization and weed control, plus fast storm debris cleanup. We keep grounds professional and safe year‑round to protect your property investment and curb appeal.</p>
+          </div>
+          <div id="handyman">
+            <h3 class="font-heading text-2xl font-bold text-[var(--brand-deep)]">Handyman & Building Maintenance</h3>
+            <p class="mt-3 leading-relaxed">Repairs and touch‑ups, doors and hardware, fixtures and installations, minor plumbing/electrical, and preventive maintenance. For bigger needs, we deliver light construction, tenant finish, selective demo, and punch‑list closeouts—efficiently and safely.</p>
+          </div>
+          <div id="snow">
+            <h3 class="font-heading text-2xl font-bold text-[var(--brand-deep)]">Snow & Ice Removal</h3>
+            <p class="mt-3 leading-relaxed">Responsive plowing and shoveling, eco‑friendly de‑icing, rooftop clearing, and on‑call storm response. Keep lots, walkways, and entries accessible so winter weather never slows your operation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Industries -->
+    <section id="industries" class="py-20 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header class="mb-10">
+          <h2 class="font-heading text-3xl sm:text-4xl text-[var(--brand-deep)] font-extrabold">Industries We Serve</h2>
+          <p class="mt-2">We partner with organizations across Summit County to keep facilities clean, safe, and running smoothly.</p>
+        </header>
+
+        <h3 class="font-heading text-xl font-bold text-[var(--brand-green)]">Core Industries</h3>
+        <div class="mt-4 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-[var(--brand-white)] border border-slate-200 rounded-2xl p-5">
+            <h4 class="font-heading font-bold">Offices & Corporate</h4>
+            <p class="mt-2 text-sm">Nightly cleaning, porter service, and handyman support with after‑hours flexibility to keep operations uninterrupted.</p>
+          </div>
+          <div class="bg-[var(--brand-white)] border border-slate-200 rounded-2xl p-5">
+            <h4 class="font-heading font-bold">HOAs & Communities</h4>
+            <p class="mt-2 text-sm">Snow, landscaping, and common‑area cleaning with predictable budgets and board‑ready reporting.</p>
+          </div>
+          <div class="bg-[var(--brand-white)] border border-slate-200 rounded-2xl p-5">
+            <h4 class="font-heading font-bold">Hotels & Lodging</h4>
+            <p class="mt-2 text-sm">Lobby and corridor care, BOH upkeep, seasonal carpet programs, and 24/7 winter response.</p>
+          </div>
+          <div class="bg-[var(--brand-white)] border border-slate-200 rounded-2xl p-5">
+            <h4 class="font-heading font-bold">Retail & Mixed‑Use</h4>
+            <p class="mt-2 text-sm">Façade/sidewalk care, parking lot upkeep, janitorial, and handyman fixes around operating hours.</p>
+          </div>
+        </div>
+
+        <h3 class="mt-12 font-heading text-xl font-bold text-[var(--brand-green)]">Additional Sectors</h3>
+        <div class="mt-4 grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div class="bg-[var(--brand-white)] border border-slate-200 rounded-2xl p-5"><h4 class="font-heading font-bold">Industrial & Warehouses</h4><p class="mt-2 text-sm">Comprehensive cleaning, floor care, and exterior maintenance for safe, efficient operations.</p></div>
+          <div class="bg-[var(--brand-white)] border border-slate-200 rounded-2xl p-5"><h4 class="font-heading font-bold">Healthcare Facilities</h4><p class="mt-2 text-sm">Strict cleaning protocols for clinics, dental offices, and specialty care spaces.</p></div>
+          <div class="bg-[var(--brand-white)] border border-slate-200 rounded-2xl p-5"><h4 class="font-heading font-bold">Banks & Financial</h4><p class="mt-2 text-sm">Professional upkeep of branches and offices with discretion and reliability.</p></div>
+          <div class="bg-[var(--brand-white)] border border-slate-200 rounded-2xl p-5"><h4 class="font-heading font-bold">Churches & Nonprofits</h4><p class="mt-2 text-sm">Dependable cleaning, handyman, and grounds services for community spaces.</p></div>
+          <div class="bg-[var(--brand-white)] border border-slate-200 rounded-2xl p-5"><h4 class="font-heading font-bold">Education & Schools</h4><p class="mt-2 text-sm">Janitorial, carpet & hard floor care, snow removal, and grounds upkeep.</p></div>
+          <div class="bg-[var(--brand-white)] border border-slate-200 rounded-2xl p-5"><h4 class="font-heading font-bold">Government & Municipal</h4><p class="mt-2 text-sm">Reliable, accountable service for public offices and community facilities.</p></div>
+          <div class="bg-[var(--brand-white)] border border-slate-200 rounded-2xl p-5"><h4 class="font-heading font-bold">Event Venues</h4><p class="mt-2 text-sm">Pre‑ and post‑event cleaning, carpet care, and quick‑turn winter access.</p></div>
+        </div>
+
+        <div class="mt-12 text-center">
+          <a href="#contact" class="focus-ring inline-flex items-center rounded-lg bg-[var(--brand-accent)] px-6 py-3 font-semibold text-white hover:opacity-90">Request a Free Quote</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-20 bg-[var(--brand-white)]">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid lg:grid-cols-2 gap-10 items-center">
+          <div>
+            <h2 class="font-heading text-3xl sm:text-4xl text-[var(--brand-deep)] font-extrabold">Get to Know Fortress Facilities Management</h2>
+            <p class="mt-4 leading-relaxed">Fortress is Summit County’s trusted one‑stop partner for commercial property care—landscaping, janitorial, snow & ice, handyman, and light construction under one dependable roof. As locals, we understand high‑country demands and deliver fast, efficient, dependable service year‑round.</p>
+            <p class="mt-3 text-sm">Service area: Breckenridge, Frisco, Dillon, Silverthorne, Keystone & Copper Mountain.</p>
+          </div>
+          <div class="grid sm:grid-cols-3 gap-6">
+            <!-- Sunshine -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-5 text-center">
+              <div class="mx-auto w-16 h-16 rounded-full bg-[var(--brand-deep)]/10 flex items-center justify-center">
+                <span class="font-heading text-[var(--brand-deep)] font-bold">S</span>
+              </div>
+              <h3 class="mt-3 font-heading font-bold">Sunshine</h3>
+              <p class="mt-1 text-sm">Property management & client services leader focused on relationships and responsiveness.</p>
+            </div>
+            <!-- Luke -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-5 text-center">
+              <div class="mx-auto w-16 h-16 rounded-full bg-[var(--brand-deep)]/10 flex items-center justify-center">
+                <span class="font-heading text-[var(--brand-deep)] font-bold">L</span>
+              </div>
+              <h3 class="mt-3 font-heading font-bold">Luke</h3>
+              <p class="mt-1 text-sm">Construction & facility repair expert leading field teams with quality, efficiency, and safety.</p>
+            </div>
+            <!-- Nate -->
+            <div class="bg-white border border-slate-200 rounded-2xl p-5 text-center">
+              <div class="mx-auto w-16 h-16 rounded-full bg-[var(--brand-deep)]/10 flex items-center justify-center">
+                <span class="font-heading text-[var(--brand-deep)] font-bold">N</span>
+              </div>
+              <h3 class="mt-3 font-heading font-bold">Nate</h3>
+              <p class="mt-1 text-sm">Commercial cleaning & seasonal operations specialist ensuring safe, functional properties through tough conditions.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12 grid md:grid-cols-3 gap-6">
+          <div class="bg-white border border-slate-200 rounded-2xl p-6">
+            <h4 class="font-heading font-bold">Customized Approach</h4>
+            <p class="mt-2 text-sm">Plans tailored to your site—seasonal, year‑round, or bundled service packages.</p>
+          </div>
+          <div class="bg-white border border-slate-200 rounded-2xl p-6">
+            <h4 class="font-heading font-bold">Experienced & Professional Team</h4>
+            <p class="mt-2 text-sm">Local knowledge + professional standards so every service exceeds expectations.</p>
+          </div>
+          <div class="bg-white border border-slate-200 rounded-2xl p-6">
+            <h4 class="font-heading font-bold">Fast, Efficient & Dependable</h4>
+            <p class="mt-2 text-sm">Quick response, streamlined service, and clear accountability from start to finish.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 bg-[var(--brand-deep)] text-white">
+      <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <header class="text-center">
+          <h2 class="font-heading text-3xl sm:text-4xl font-extrabold">Ready for one team to handle it all?</h2>
+          <p class="mt-2">Tell us about your property and we’ll follow up the same business day. Winter weather requests are prioritized.</p>
+        </header>
+        <form class="mt-10 grid sm:grid-cols-2 gap-4" action="#" method="post" onsubmit="alert('Form submitted (demo)'); return false;">
+          <div>
+            <label class="block text-sm mb-1" for="name">Name</label>
+            <input id="name" name="name" required class="w-full rounded-lg border border-white/30 bg-white/10 px-3 py-2 placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-[var(--brand-accent)]" placeholder="Your name" />
+          </div>
+          <div>
+            <label class="block text-sm mb-1" for="company">Company</label>
+            <input id="company" name="company" class="w-full rounded-lg border border-white/30 bg-white/10 px-3 py-2 placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-[var(--brand-accent)]" placeholder="Company or HOA" />
+          </div>
+          <div class="sm:col-span-2">
+            <label class="block text-sm mb-1" for="address">Property Address</label>
+            <input id="address" name="address" class="w-full rounded-lg border border-white/30 bg-white/10 px-3 py-2 placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-[var(--brand-accent)]" placeholder="Street, City" />
+          </div>
+          <div>
+            <label class="block text-sm mb-1" for="email">Email</label>
+            <input id="email" name="email" type="email" required class="w-full rounded-lg border border-white/30 bg-white/10 px-3 py-2 placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-[var(--brand-accent)]" placeholder="you@company.com" />
+          </div>
+          <div>
+            <label class="block text-sm mb-1" for="phone">Phone</label>
+            <input id="phone" name="phone" class="w-full rounded-lg border border-white/30 bg-white/10 px-3 py-2 placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-[var(--brand-accent)]" placeholder="(000) 000-0000" />
+          </div>
+          <div class="sm:col-span-2">
+            <label class="block text-sm mb-1" for="servicesNeeded">Services Needed</label>
+            <select id="servicesNeeded" name="services" multiple class="w-full rounded-lg border border-white/30 bg-white/10 px-3 py-2 min-h-[48px] focus:outline-none focus:ring-2 focus:ring-[var(--brand-accent)]">
+              <option>Janitorial</option>
+              <option>Landscaping</option>
+              <option>Carpet & Floor Care</option>
+              <option>Snow & Ice Removal</option>
+              <option>Handyman & Building Maintenance</option>
+              <option>Light Construction</option>
+            </select>
+            <p class="mt-1 text-xs opacity-80">Hold Ctrl/Cmd to select multiple.</p>
+          </div>
+          <div class="sm:col-span-2">
+            <label class="block text-sm mb-1" for="start">Ideal Start Date</label>
+            <input id="start" type="date" name="start" class="w-full rounded-lg border border-white/30 bg-white/10 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-[var(--brand-accent)]" />
+          </div>
+          <div class="sm:col-span-2">
+            <label class="block text-sm mb-1" for="notes">Notes</label>
+            <textarea id="notes" name="notes" rows="4" class="w-full rounded-lg border border-white/30 bg-white/10 px-3 py-2 placeholder-white/70 focus:outline-none focus:ring-2 focus:ring-[var(--brand-accent)]" placeholder="Tell us about access, timing, or special requirements"></textarea>
+          </div>
+          <div class="sm:col-span-2">
+            <button class="w-full sm:w-auto focus-ring inline-flex items-center rounded-lg bg-[var(--brand-accent)] px-6 py-3 font-semibold text-white hover:opacity-90">Submit Request</button>
+          </div>
+        </form>
+        <p class="mt-6 text-sm text-center opacity-90">Serving Breckenridge • Frisco • Dillon • Silverthorne • Keystone • Copper Mountain</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#0B2236] text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid md:grid-cols-3 gap-8">
+      <div>
+        <div class="font-heading text-xl font-extrabold">FORTRESS</div>
+        <p class="mt-2 text-sm opacity-80">Facilities Management • Summit County, CO</p>
+        <p class="mt-1 text-xs opacity-70">© <span id="year"></span> Fortress Facilities Management. All rights reserved.</p>
+      </div>
+      <div>
+        <h5 class="font-heading font-bold">Navigate</h5>
+        <ul class="mt-2 space-y-1 text-sm">
+          <li><a class="hover:underline" href="#services">Services</a></li>
+          <li><a class="hover:underline" href="#industries">Industries</a></li>
+          <li><a class="hover:underline" href="#about">About</a></li>
+          <li><a class="hover:underline" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5 class="font-heading font-bold">Get in Touch</h5>
+        <ul class="mt-2 space-y-1 text-sm">
+          <li><span class="opacity-80">Phone:</span> <span class="opacity-90">[Placeholder]</span></li>
+          <li><span class="opacity-80">Email:</span> <span class="opacity-90">[Placeholder]</span></li>
+          <li><span class="opacity-80">Service Area:</span> Breckenridge, Frisco, Dillon, Silverthorne, Keystone, Copper Mountain</li>
+        </ul>
+        <a href="#contact" class="mt-4 inline-flex items-center rounded-lg bg-[var(--brand-accent)] px-4 py-2 font-semibold text-white hover:opacity-90">Request a Free Quote</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
