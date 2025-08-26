@@ -1,37 +1,86 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Home | Fortress Facility Solutions</title>
-  <link rel="stylesheet" href="style.css">
-  <script defer src="script.js"></script>
+<title>Fortress Facility Solutions | Home</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  
-<header class="site-header">
-  <div class="container header-inner">
-    <a href="index.html" class="logo">Fortress<span>Facility</span></a>
-    <nav class="nav">
-      <a href="index.html">Home</a>
+<header class="nav" role="navigation" aria-label="Main">
+  <div class="nav__in">
+    <div class="brand"><a href="index.html" style="color:#fff">FORTRESS FACILITY SOLUTIONS</a></div>
+    <nav class="menu" aria-label="Menu">
+      <a href="index.html#home">Home</a>
       <a href="services.html">Services</a>
-      <a href="about.html">About</a>
+      <a href="industries.html">Industries</a>
       <a href="contact.html">Contact</a>
     </nav>
-    <a class="cta" href="contact.html">Get Quote</a>
+    <a href="contact.html" class="cta-nav">Get a Quote</a>
   </div>
 </header>
 
-  <main class="content container">
-    <h1>Home</h1>
-<p>Services</p>
-<p>About Us</p>
-<p>Contact</p>
-  </main>
-  
-<footer class="site-footer">
-  <div class="container small">&copy; Fortress Facility Solutions</div>
-</footer>
+<section id="home" class="top-hero" aria-label="Hero">
+  <div class="car__in">
+    <div class="frame" data-carousel>
+      <div class="track">
+        <figure class="slide"><img src="https://source.unsplash.com/2000x900/?colorado,mountains,winter" alt="Colorado winter mountains"><div class="overlay"></div></figure>
+        <figure class="slide"><img src="https://source.unsplash.com/2000x900/?roof,snow,removal" alt="Roof snow removal"><div class="overlay"></div></figure>
+        <figure class="slide"><img src="https://source.unsplash.com/2000x900/?janitorial,cleaning,commercial" alt="Commercial janitorial"><div class="overlay"></div></figure>
+        <figure class="slide"><img src="https://source.unsplash.com/2000x900/?landscaping,grounds,maintenance" alt="Landscaping maintenance"><div class="overlay"></div></figure>
+        <figure class="slide"><img src="https://source.unsplash.com/2000x900/?mechanical,boiler,room" alt="Mechanical room PM"><div class="overlay"></div></figure>
+      </div>
+      <div class="hero-copy">
+        <h1 class="h1">Fortress Facility Solutions</h1>
+        <p class="sub">Summit County’s trusted one-stop partner for commercial property care. From landscaping and janitorial to snow removal and facility upkeep, we deliver every essential service under one roof—fast, dependable, and local.</p>
+        <a href="contact.html" class="cta-primary">Request a Free Quote</a>
+      </div>
+    </div>
+  </div>
 
+  <div class="solutions-wrap">
+    <div class="solutions" aria-label="Key services">
+      <div class="sol">Landscaping</div>
+      <div class="sol">Janitorial</div>
+      <div class="sol">Snow removal</div>
+      <div class="sol">Facility upkeep</div>
+    </div>
+  </div>
+</section>
+
+<section class="section section--soft">
+  <div class="max">
+    <h2 class="h2">Why Fortress</h2>
+    <p class="lead">Local, in-house trades with predictable timelines and board-ready reporting.</p>
+    <div class="proof">
+      <div class="proof__item"><strong>24/7</strong>Priority support</div>
+      <div class="proof__item"><strong>100%</strong>Local & in-house</div>
+      <div class="proof__item"><strong>Board-ready</strong>Reporting & documentation</div>
+      <div class="proof__item"><strong>Summit County</strong>Dillon • Frisco • Silverthorne • Keystone • Copper</div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer__in">
+    <div>
+      <div class="foot-title">Fortress Facility Solutions</div>
+      <p>Local, in-house maintenance built for Summit County’s mountain conditions. Landscaping, janitorial, snow removal, and facilities—under one reliable team.</p>
+    </div>
+    <div>
+      <div class="foot-title">Coverage</div>
+      <p>Dillon • Frisco • Silverthorne • Keystone • Copper Mountain</p>
+      <p>24/7 Priority Support</p>
+    </div>
+    <div>
+      <div class="foot-title">Contact</div>
+      <p><a href="tel:+19705550123" style="color:#fff">(970) 555-0123</a><br>
+      <a href="mailto:hello@fortressfacilities.com" style="color:#fff">hello@fortressfacilities.com</a></p>
+    </div>
+  </div>
+  <div class="copy">© <span id="y"></span> Fortress Facility Solutions. All rights reserved.</div>
+</footer>
+<script src="assets/site.js"></script>
 </body>
 </html>
